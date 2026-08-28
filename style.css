@@ -1,4 +1,4 @@
-/* Configuração geral e visual de fundo */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,47 +6,61 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Cinzel', 'Didot', 'Segoe UI', serif;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #0f172a, #1e293b, #3b82f6);
-    color: #ffffff;
+    /* Fundo em gradiente suave de roxo profundo a lilás sofisticado */
+    background: radial-gradient(circle at top left, #2e1065, #1e1b4b, #0f172a);
+    color: #f3e8ff;
     padding: 20px;
 }
 
-/* Cabeçalho com efeito de vidro (Glassmorphism) */
+/* Cabeçalho refinado com efeito de cristal/vidro */
 header {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 30px;
-    padding: 15px 40px;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 16px;
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    letter-spacing: 1px;
+    font-size: 2.2rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 35px;
+    padding: 18px 45px;
     text-transform: uppercase;
+    
+    /* Vidro lilás translucido */
+    background: rgba(216, 180, 254, 0.08);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    
+    /* Borda sutil de cristal */
+    border: 1px solid rgba(233, 213, 255, 0.25);
+    border-radius: 20px;
+    
+    /* Sombra refinada e iluminação suave em roxo */
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.6),
+                inset 0 1px 1px rgba(255, 255, 255, 0.3);
+    text-shadow: 0 0 12px rgba(216, 180, 254, 0.4);
 }
 
-/* Container responsivo para o vídeo do YouTube */
+/* Moldura e responsividade do player de vídeo */
 iframe {
     width: 100%;
-    max-width: 800px;
+    max-width: 850px;
     aspect-ratio: 16 / 9;
     height: auto;
-    border-radius: 16px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 24px;
+    
+    /* Borda suave e iluminação interna */
+    border: 1px solid rgba(233, 213, 255, 0.2);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6),
+                0 0 20px rgba(168, 85, 247, 0.15);
+    
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-/* Efeito sutil ao passar o mouse sobre o vídeo */
+/* Efeito de destaque ao passar o mouse */
 iframe:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 16px 50px rgba(59, 130, 246, 0.3);
+    transform: translateY(-6px);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7),
+                0 0 35px rgba(192, 132, 252, 0.35);
 }
