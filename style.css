@@ -12,7 +12,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* Fundo em gradiente suave de roxo profundo a lilás sofisticado */
+    /* Fundo em gradiente suave sofisticado */
     background: radial-gradient(circle at top left, #2e1065, #1e1b4b, #0f172a);
     color: #f3e8ff;
     padding: 20px;
@@ -27,7 +27,7 @@ header {
     padding: 18px 45px;
     text-transform: uppercase;
     
-    /* Vidro lilás translucido */
+    /* Vidro translucido */
     background: rgba(216, 180, 254, 0.08);
     backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(14px);
